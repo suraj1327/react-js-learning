@@ -1,0 +1,13 @@
+.nav-links{
+    display: flex;
+}
+
+.ul-class{
+    display: flex;
+    justify-content: flex-start;
+    width:50%;
+}
+
+.active{
+    background-color: aqua;
+}
