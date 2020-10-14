@@ -9,7 +9,8 @@ class Cart extends React.Component{
  static defaultProps = {
 books:[{
    orderId:123,
-   productName:456
+   productName:456,
+   productType:"Car"
  }]};
 
  toggleStateValues=()=>{
