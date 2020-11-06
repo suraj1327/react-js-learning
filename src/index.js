@@ -95,25 +95,6 @@ const MyHealthCounter = ({ name, days, year, goal }) => {
   )
 }
 
-/* class MyHealthCounter extends Component {
-  goalPercent=decimal=>{
-    console.log(decimal);
-    return decimal*100 +'%';
-  }
-  calcGoalPercent=(total,goal)=>{
-    return this.goalPercent(total/goal);
-  }
-
-  render() {
-    const { name, days, year, goal } = this.props; 
-    return (
-       Same as func component render
-    );
-  }
-
-} */
-
-
 class Message extends Component {
   render() {//use two curly braces for telling property with value
     return (
@@ -166,13 +147,14 @@ render(
       <p>My name is SS</p>
     </div>, */
   <div>
+    
    <Router>
       <App book={booksListObj}/>
     </Router>
     <Message msg="How are you?" color="blue" name="Suraj Soni" minutes={5} />
     <MyHealthCounter name={hobbyObject.name} days={hobbyObject.days} year={hobbyObject.year} goal={hobbyObject.goal} />
     <Library books={booksListObj}/>
-    <LibraryClass/>
+
     <FavColorForm/>
 
   </div>,

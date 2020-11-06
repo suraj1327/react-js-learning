@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Book } from './../Library/Book';
+import { Book } from '../Library/Book';
 import PropTypes from 'prop-types';
 
-class Cart extends React.Component{
+class SampleRoute extends React.Component{
 
  state={open:true,loading:false,data:[]}
  static defaultProps = {
@@ -43,9 +43,9 @@ const {books}= this.props;
                })
            }
 
-           {
+          {/*  {
            books.map((book,newj)=><Book key={newj} title={book.title}/>
-               )}
+               )} */}
          </div>
      )
  }
@@ -53,7 +53,7 @@ const {books}= this.props;
 }
 
 
-Cart.propTypes={
+SampleRoute.propTypes={
    books:PropTypes.array
 }
-export default Cart;
+export default SampleRoute;
